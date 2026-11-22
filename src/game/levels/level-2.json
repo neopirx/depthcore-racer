@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "seed": 217377,
+  "sector": 2,
+  "diff": 0.39,
+  "modules": [
+    {
+      "type": "kickchain",
+      "seed": 1075287469,
+      "style": "monolith"
+    },
+    {
+      "type": "run",
+      "seed": 1897570477,
+      "style": "monolith"
+    },
+    {
+      "type": "kickchain",
+      "seed": 1740833784,
+      "style": "pylon"
+    },
+    {
+      "type": "run",
+      "seed": 934395280,
+      "style": "pylon"
+    },
+    {
+      "type": "kick",
+      "seed": 104773733,
+      "style": "pylon",
+      "spin": 1
+    },
+    {
+      "type": "kickturn",
+      "seed": 1136217177,
+      "style": "pylon",
+      "spin": 1
+    },
+    {
+      "type": "triple",
+      "seed": 1668780785,
+      "style": "tiered"
+    },
+    {
+      "type": "kickturn",
+      "seed": 1004383258,
+      "style": "tiered",
+      "spin": -1
+    },
+    {
+      "type": "ledge",
+      "seed": 978949369,
+      "style": "tiered"
+    },
+    {
+      "type": "climbkick",
+      "seed": 377499483,
+      "style": "pylon"
+    },
+    {
+      "type": "drop",
+      "seed": 307905845,
+      "style": "pylon"
+    },
+    {
+      "type": "ramp",
+      "seed": 1942296086,
+      "style": "tiered"
+    },
+    {
+      "type": "run",
+      "seed": 1612932229,
+      "style": "tiered"
+    },
+    {
+      "type": "wallrun",
+      "seed": 795566209,
+      "style": "truss"
+    },
+    {
+      "type": "pivot",
+      "seed": 299288959,
+      "style": "truss",
+      "spin": -1
+    },
+    {
+      "type": "drop",
+      "seed": 1234611312,
+      "style": "truss"
+    },
+    {
+      "type": "pivot",
+      "seed": 1171345381,
+      "style": "pylon",
+      "spin": -1
+    },
+    {
+      "type": "dropturn",
+      "seed": 1821095209,
+      "style": "pylon",
+      "spin": -1
+    }
+  ],
+  "shapes": [],
+  "name": "CHROME RUN"
+}

@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "seed": 636293,
+  "sector": 6,
+  "diff": 0.87,
+  "modules": [
+    {
+      "type": "gap",
+      "seed": 1327889822,
+      "style": "pylon"
+    },
+    {
+      "type": "cascade",
+      "seed": 1340800948,
+      "style": "pylon"
+    },
+    {
+      "type": "wallclimb",
+      "seed": 98838680,
+      "style": "pylon"
+    },
+    {
+      "type": "turngap",
+      "seed": 844783297,
+      "style": "monolith",
+      "spin": 1
+    },
+    {
+      "type": "chimney",
+      "seed": 28698640,
+      "style": "monolith"
+    },
+    {
+      "type": "vaultturn",
+      "seed": 343305350,
+      "style": "monolith",
+      "spin": 1
+    },
+    {
+      "type": "wallchain",
+      "seed": 1651858800,
+      "style": "tiered"
+    },
+    {
+      "type": "corner",
+      "seed": 1999584455,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "tictac",
+      "seed": 1336620724,
+      "style": "tiered"
+    },
+    {
+      "type": "turngap",
+      "seed": 708501150,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "ledge",
+      "seed": 1209263469,
+      "style": "truss"
+    },
+    {
+      "type": "tictac",
+      "seed": 1885883366,
+      "style": "truss"
+    },
+    {
+      "type": "zigzag",
+      "seed": 2068090683,
+      "style": "pylon"
+    },
+    {
+      "type": "plunge",
+      "seed": 2133875396,
+      "style": "pylon"
+    },
+    {
+      "type": "climb",
+      "seed": 1468481778,
+      "style": "pylon"
+    },
+    {
+      "type": "turngap",
+      "seed": 316175644,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "turngap",
+      "seed": 2087747827,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "alley",
+      "seed": 1659815624,
+      "style": "truss"
+    },
+    {
+      "type": "corner",
+      "seed": 1888053472,
+      "style": "truss",
+      "spin": -1
+    },
+    {
+      "type": "gap",
+      "seed": 963693180,
+      "style": "pylon"
+    },
+    {
+      "type": "split",
+      "seed": 1806229087,
+      "style": "pylon"
+    },
+    {
+      "type": "speedcorner",
+      "seed": 424394518,
+      "style": "pylon"
+    },
+    {
+      "type": "run",
+      "seed": 1657633905,
+      "style": "monolith"
+    },
+    {
+      "type": "plunge",
+      "seed": 1753636986,
+      "style": "monolith"
+    }
+  ],
+  "shapes": [],
+  "name": "CORE DESCENT"
+}

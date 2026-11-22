@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "seed": 112648,
+  "sector": 1,
+  "diff": 0.27,
+  "modules": [
+    {
+      "type": "shuttle",
+      "seed": 1303322333,
+      "style": "monolith"
+    },
+    {
+      "type": "run",
+      "seed": 435024482,
+      "style": "monolith"
+    },
+    {
+      "type": "drop",
+      "seed": 691765844,
+      "style": "pylon"
+    },
+    {
+      "type": "tictac",
+      "seed": 575718203,
+      "style": "pylon"
+    },
+    {
+      "type": "vaultturn",
+      "seed": 1805540995,
+      "style": "pylon",
+      "spin": -1
+    },
+    {
+      "type": "vaultturn",
+      "seed": 176950992,
+      "style": "tiered",
+      "spin": -1
+    },
+    {
+      "type": "climb",
+      "seed": 1640253383,
+      "style": "tiered"
+    },
+    {
+      "type": "kick",
+      "seed": 1673407455,
+      "style": "tiered",
+      "spin": -1
+    },
+    {
+      "type": "stairs",
+      "seed": 540887442,
+      "style": "monolith"
+    },
+    {
+      "type": "turngap",
+      "seed": 161620396,
+      "style": "monolith",
+      "spin": -1
+    },
+    {
+      "type": "gallery",
+      "seed": 1699511092,
+      "style": "monolith"
+    },
+    {
+      "type": "vaultgap",
+      "seed": 726075976,
+      "style": "pylon"
+    },
+    {
+      "type": "terrace",
+      "seed": 461910030,
+      "style": "pylon"
+    },
+    {
+      "type": "pivot",
+      "seed": 1422173945,
+      "style": "pylon"
+    },
+    {
+      "type": "gap",
+      "seed": 583270387,
+      "style": "tiered"
+    },
+    {
+      "type": "tictac",
+      "seed": 1525458825,
+      "style": "tiered"
+    },
+    {
+      "type": "rooftops",
+      "seed": 54448613,
+      "style": "tiered"
+    }
+  ],
+  "shapes": [],
+  "name": "SIGNAL ENTRY"
+}

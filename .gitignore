@@ -1,0 +1,12 @@
+node_modules
+dist
+
+dist-admin
+data/
+.env
+
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

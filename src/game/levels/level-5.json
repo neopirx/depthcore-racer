@@ -1,0 +1,120 @@
+{
+  "version": 2,
+  "seed": 531564,
+  "sector": 5,
+  "diff": 0.75,
+  "modules": [
+    {
+      "type": "drop",
+      "seed": 1549459258,
+      "style": "pylon"
+    },
+    {
+      "type": "climb",
+      "seed": 1669344220,
+      "style": "pylon"
+    },
+    {
+      "type": "climbkick",
+      "seed": 2081203889,
+      "style": "monolith",
+      "spin": 1
+    },
+    {
+      "type": "climb",
+      "seed": 1219939514,
+      "style": "monolith"
+    },
+    {
+      "type": "climbkick",
+      "seed": 228729076,
+      "style": "pylon",
+      "spin": 1
+    },
+    {
+      "type": "kickturn",
+      "seed": 317944768,
+      "style": "pylon",
+      "spin": 1
+    },
+    {
+      "type": "swing",
+      "seed": 1237320595,
+      "style": "pylon"
+    },
+    {
+      "type": "run",
+      "seed": 1227318881,
+      "style": "pylon"
+    },
+    {
+      "type": "speedcorner",
+      "seed": 509174154,
+      "style": "truss"
+    },
+    {
+      "type": "run",
+      "seed": 1506133658,
+      "style": "truss"
+    },
+    {
+      "type": "pillarkick",
+      "seed": 385982959,
+      "style": "truss"
+    },
+    {
+      "type": "dropturn",
+      "seed": 690081782,
+      "style": "pylon"
+    },
+    {
+      "type": "wallrun",
+      "seed": 409307409,
+      "style": "pylon"
+    },
+    {
+      "type": "wallclimb",
+      "seed": 2086499162,
+      "style": "pylon"
+    },
+    {
+      "type": "turngap",
+      "seed": 336538958,
+      "style": "pylon",
+      "spin": 1
+    },
+    {
+      "type": "tictac",
+      "seed": 519736508,
+      "style": "tiered"
+    },
+    {
+      "type": "climbkick",
+      "seed": 1973762010,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "stairs",
+      "seed": 1756617487,
+      "style": "truss"
+    },
+    {
+      "type": "kick",
+      "seed": 679047843,
+      "style": "truss"
+    },
+    {
+      "type": "pillarkick",
+      "seed": 1193205167,
+      "style": "monolith"
+    },
+    {
+      "type": "speedcorner",
+      "seed": 42299200,
+      "style": "monolith"
+    }
+  ],
+  "shapes": [],
+  "name": "VOID CIRCUIT"
+}

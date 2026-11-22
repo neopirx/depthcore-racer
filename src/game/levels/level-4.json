@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "seed": 426835,
+  "sector": 4,
+  "diff": 0.63,
+  "modules": [
+    {
+      "type": "wallchain",
+      "seed": 786196815,
+      "style": "truss"
+    },
+    {
+      "type": "drop",
+      "seed": 366235970,
+      "style": "truss"
+    },
+    {
+      "type": "terrace",
+      "seed": 1030608935,
+      "style": "tiered"
+    },
+    {
+      "type": "gauntlet",
+      "seed": 399602520,
+      "style": "tiered"
+    },
+    {
+      "type": "zigzag",
+      "seed": 1243585463,
+      "style": "pylon"
+    },
+    {
+      "type": "drop",
+      "seed": 1865733561,
+      "style": "pylon"
+    },
+    {
+      "type": "kick",
+      "seed": 438965014,
+      "style": "truss",
+      "spin": 1
+    },
+    {
+      "type": "pivot",
+      "seed": 360184514,
+      "style": "truss",
+      "spin": 1
+    },
+    {
+      "type": "kickchain",
+      "seed": 149202739,
+      "style": "truss"
+    },
+    {
+      "type": "run",
+      "seed": 2059187538,
+      "style": "tiered"
+    },
+    {
+      "type": "pivot",
+      "seed": 823367064,
+      "style": "tiered",
+      "spin": -1
+    },
+    {
+      "type": "tictac",
+      "seed": 1195729102,
+      "style": "tiered"
+    },
+    {
+      "type": "dropturn",
+      "seed": 1329379591,
+      "style": "pylon"
+    },
+    {
+      "type": "vault",
+      "seed": 1070329127,
+      "style": "pylon"
+    },
+    {
+      "type": "kickturn",
+      "seed": 1714519396,
+      "style": "monolith"
+    },
+    {
+      "type": "wallrun",
+      "seed": 2125652977,
+      "style": "monolith"
+    },
+    {
+      "type": "pivot",
+      "seed": 1451985635,
+      "style": "monolith"
+    },
+    {
+      "type": "overunder",
+      "seed": 1534827277,
+      "style": "tiered"
+    }
+  ],
+  "shapes": [],
+  "name": "VERTICAL SHIFT"
+}

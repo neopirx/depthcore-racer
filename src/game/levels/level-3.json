@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "seed": 322106,
+  "sector": 3,
+  "diff": 0.51,
+  "modules": [
+    {
+      "type": "gap",
+      "seed": 478622660,
+      "style": "monolith"
+    },
+    {
+      "type": "kickturn",
+      "seed": 1188964324,
+      "style": "monolith"
+    },
+    {
+      "type": "tictac",
+      "seed": 371354234,
+      "style": "truss"
+    },
+    {
+      "type": "kickchain",
+      "seed": 1047227684,
+      "style": "truss"
+    },
+    {
+      "type": "run",
+      "seed": 1180833710,
+      "style": "monolith"
+    },
+    {
+      "type": "pivot",
+      "seed": 627908341,
+      "style": "monolith",
+      "spin": 1
+    },
+    {
+      "type": "kickchain",
+      "seed": 1970791134,
+      "style": "tiered"
+    },
+    {
+      "type": "run",
+      "seed": 1320803342,
+      "style": "tiered"
+    },
+    {
+      "type": "pivot",
+      "seed": 223446857,
+      "style": "tiered",
+      "spin": 1
+    },
+    {
+      "type": "ramp",
+      "seed": 778219037,
+      "style": "tiered"
+    },
+    {
+      "type": "run",
+      "seed": 1763841635,
+      "style": "pylon"
+    },
+    {
+      "type": "drop",
+      "seed": 779553663,
+      "style": "pylon"
+    },
+    {
+      "type": "corner",
+      "seed": 616683367,
+      "style": "truss",
+      "spin": -1
+    },
+    {
+      "type": "dropturn",
+      "seed": 850668329,
+      "style": "truss",
+      "spin": -1
+    },
+    {
+      "type": "pivot",
+      "seed": 2027290319,
+      "style": "truss",
+      "spin": -1
+    },
+    {
+      "type": "switchback",
+      "seed": 1051002092,
+      "style": "truss"
+    },
+    {
+      "type": "pivot",
+      "seed": 511373902,
+      "style": "monolith",
+      "spin": 1
+    },
+    {
+      "type": "terrace",
+      "seed": 439386802,
+      "style": "monolith"
+    }
+  ],
+  "shapes": [],
+  "name": "SKYLINE RELAY"
+}

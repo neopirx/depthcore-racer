@@ -1,0 +1,110 @@
+/* DEPTHCORE // ROUTE EDITOR — same Marathon language as the HUD (vars + fonts from hud.css) */
+body.editor { user-select: none; }
+body.editor input, body.editor select { user-select: text; }
+#ed { position: fixed; inset: 0; pointer-events: none; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--mono); color: var(--white); }
+#ed aside, #ed footer, #ed button, #ed input, #ed select, #ed .toasts { pointer-events: auto; }
+#ed aside { position: absolute; top: 14px; bottom: 74px; width: 300px; display: flex; flex-direction: column; gap: 12px; }
+#ed .left { left: 14px; }
+#ed .right { right: 14px; width: 290px; overflow-y: auto; scrollbar-width: thin; }
+#ed section { background: rgba(var(--shade-rgb), 0.82); border: 1px solid var(--faint); padding: 12px 12px 12px; position: relative; backdrop-filter: blur(3px); }
+#ed section::before { content: ''; position: absolute; left: -1px; top: -1px; width: 10px; height: 10px; border-left: 2px solid var(--acid); border-top: 2px solid var(--acid); }
+
+#ed header { display: flex; align-items: center; gap: 10px; padding: 4px 0 2px; }
+#ed header .blk { font-family: var(--hero); font-size: 11px; padding: 5px 7px 3px; }
+#ed header .t { font-family: var(--hero); font-size: 17px; letter-spacing: 0.04em; }
+#ed header .t i { font-style: normal; color: var(--acid); }
+#ed header .lbl { margin-left: auto; }
+
+#ed .sh { display: flex; align-items: center; gap: 8px; font-family: var(--hero); font-size: 10px; letter-spacing: 0.14em; margin-bottom: 10px; }
+#ed .sh .k { background: var(--white); color: var(--ink); padding: 2px 4px 1px; font-size: 8px; }
+#ed .sh .lbl { margin-left: auto; font-size: 8px; }
+#ed .sh.sub { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--faint); }
+
+#ed label { display: flex; align-items: center; gap: 8px; margin: 6px 0; min-height: 24px; }
+#ed label > .lbl:first-child { width: 72px; flex: none; font-size: 8px; }
+#ed label > b { font-family: var(--tech); font-weight: 400; font-size: 10px; white-space: nowrap; min-width: 70px; text-align: right; }
+#ed input, #ed select { flex: 1; min-width: 0; background: rgba(var(--shade-rgb), 0.9); border: 1px solid var(--faint); color: var(--white); font-family: var(--mono); font-size: 12px; padding: 4px 6px; text-transform: uppercase; outline: none; border-radius: 0; }
+#ed input:focus, #ed select:focus { border-color: var(--acid); }
+#ed select option { background: #000; }
+#ed input[type=range] { -webkit-appearance: none; appearance: none; height: 14px; padding: 0; border: 0; background: repeating-linear-gradient(90deg, var(--faint) 0 3px, transparent 3px 6px) center / 100% 6px no-repeat; }
+#ed input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 10px; height: 16px; background: var(--acid); border: 0; }
+#ed input[type=range]::-moz-range-thumb { width: 10px; height: 16px; background: var(--acid); border: 0; border-radius: 0; }
+#ed input[type=number] { width: 100%; }
+
+#ed button { font-family: var(--hero); font-size: 9px; letter-spacing: 0.08em; color: var(--white); background: transparent; border: 1.5px solid var(--white); padding: 6px 9px 4px; cursor: pointer; border-radius: 0; text-transform: uppercase; }
+#ed button:hover { background: var(--white); color: var(--ink); }
+#ed button:disabled { opacity: 0.3; pointer-events: none; }
+#ed button.acid, #ed .btn.acid { background: var(--acid); border-color: var(--acid); color: var(--ink); }
+#ed button.acid:hover { background: var(--white); border-color: var(--white); }
+#ed button.r { border-color: var(--rival); color: var(--rival); }
+#ed button.r:hover { background: var(--rival); color: var(--white); }
+#ed label > button { padding: 4px 8px 3px; font-family: var(--mono); font-size: 13px; }
+#ed .row { display: flex; gap: 6px; margin-top: 10px; }
+#ed .row .g-go { flex: 1; font-size: 12px; padding: 10px 12px 8px; }
+#ed .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; }
+
+#ed .chip { font-family: var(--wide); font-size: 8px; letter-spacing: 0.14em; border: 1px solid var(--faint); padding: 5px 7px 4px; color: var(--white); }
+#ed .chip:hover { border-color: var(--acid); background: transparent; color: var(--acid); }
+#ed .chip.on { background: var(--acid); border-color: var(--acid); color: var(--ink); }
+#ed .chips, #ed .shapes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+#ed .grp { margin-bottom: 9px; }
+#ed .grp > .lbl { font-size: 8px; }
+#ed .seg4 { display: flex; flex-wrap: wrap; gap: 3px; flex: 1; }
+
+/* segment list */
+#ed .segs { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+#ed .list { flex: 1; overflow-y: auto; scrollbar-width: thin; margin: 0 -6px; padding: 0 6px; }
+#ed .seg { display: grid; grid-template-columns: 24px 1fr auto 36px 14px 34px; gap: 6px; align-items: center; padding: 5px 6px 4px; border-left: 2px solid transparent; cursor: pointer; font-size: 11px; }
+#ed .seg:nth-child(odd) { background: rgba(255, 255, 255, 0.025); }
+#ed .seg:hover { background: rgba(var(--accent-rgb), 0.1); }
+#ed .seg .i { font-family: var(--tech); font-size: 10px; color: var(--dim); }
+#ed .seg .t { font-family: var(--hero); font-size: 10px; letter-spacing: 0.06em; }
+#ed .seg .tags { display: flex; gap: 3px; }
+#ed .seg .tags em { font-style: normal; font-family: var(--wide); font-size: 8px; border: 1px solid var(--dim); padding: 1px 3px 0; color: var(--dim); }
+#ed .seg .st, #ed .seg .hd { font-family: var(--wide); font-size: 8px; color: var(--dim); letter-spacing: 0.1em; }
+#ed .seg .h { font-family: var(--tech); font-size: 10px; text-align: right; }
+#ed .seg.sel { background: var(--acid); color: var(--ink); border-left-color: var(--white); }
+#ed .seg.sel .i, #ed .seg.sel .st, #ed .seg.sel .hd { color: var(--ink); }
+#ed .seg.sel .tags em { color: var(--ink); border-color: var(--ink); }
+#ed .seg.bad { border-left-color: var(--rival); }
+#ed .seg.bad .t { color: var(--rival); }
+#ed .seg.bad.sel { background: var(--rival); color: var(--white); }
+#ed .seg.bad.sel .t { color: var(--white); }
+#ed .seg.end { cursor: default; color: var(--dim); }
+#ed .seg.end .t { font-family: var(--wide); font-size: 8px; letter-spacing: 0.2em; }
+
+/* inspector */
+#ed .insp .big { font-family: var(--hero); font-size: 26px; line-height: 1; margin: 2px 0 4px; word-break: break-all; }
+#ed .insp .brief { font-family: var(--serif); text-transform: none; font-style: italic; font-size: 14px; letter-spacing: 0; color: var(--dim); margin-bottom: 10px; line-height: 1.3; }
+#ed .insp .note { font-size: 8px; color: var(--dim); letter-spacing: 0.12em; margin: -2px 0 6px 80px; line-height: 1.5; }
+#ed .insp .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 10px; font-size: 9px; color: var(--dim); letter-spacing: 0.15em; }
+#ed .insp .meta b { color: var(--white); font-weight: 400; font-family: var(--tech); font-size: 10px; }
+#ed .insp .warn { margin-top: 10px; background: var(--rival); color: var(--white); padding: 6px 8px 5px; font-size: 10px; line-height: 1.6; letter-spacing: 0.1em; }
+#ed .insp .empty .big { color: transparent; -webkit-text-stroke: 1px var(--dim); font-size: 24px; }
+#ed .nums { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 6px; }
+#ed .nums label { flex-direction: column; align-items: stretch; gap: 2px; margin: 4px 0; }
+#ed .nums label > .lbl:first-child { width: auto; }
+
+/* footer */
+#ed footer { position: absolute; left: 14px; right: 14px; bottom: 14px; height: 48px; display: flex; align-items: stretch; gap: 12px; }
+#ed .status { display: flex; align-items: center; gap: 12px; padding: 0 16px; min-width: 330px; background: rgba(var(--shade-rgb), 0.85); border: 1px solid var(--faint); }
+#ed .status b { font-family: var(--hero); font-size: 15px; font-weight: 400; padding: 5px 10px 3px; }
+#ed .status.ok b { background: var(--acid); color: var(--ink); }
+#ed .status.bad b { background: var(--rival); color: var(--white); }
+#ed .status.run b { border: 1.5px solid var(--white); animation: blink 0.6s steps(1) infinite; }
+#ed .stats { flex: 1; display: flex; align-items: center; gap: 14px; padding: 0 14px; font-size: 8px; letter-spacing: 0.12em; color: var(--dim); background: rgba(var(--shade-rgb), 0.6); border: 1px solid var(--faint); overflow: hidden; white-space: nowrap; }
+#ed .stats b { color: var(--white); font-family: var(--tech); font-weight: 400; font-size: 13px; }
+#ed .acts { display: flex; gap: 6px; align-items: stretch; }
+#ed .acts button { padding: 0 14px; }
+#ed .acts .f-play { font-size: 13px; padding: 0 22px; }
+
+#ed .hint { position: absolute; left: 330px; right: 320px; bottom: 72px; text-align: center; font-size: 8px; letter-spacing: 0.22em; line-height: 1.8; }
+#ed .toasts { position: absolute; left: 50%; top: 46px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 4px; pointer-events: none; }
+#ed .toast { font-family: var(--hero); font-size: 12px; background: var(--acid); color: var(--ink); padding: 6px 12px 4px; animation: pop 2.2s forwards; }
+#ed .toast.r { background: var(--rival); color: var(--white); }
+
+/* shared UI type (Michroma caps + Archivo prose, see hud.css): Michroma runs wide, keep labels on one line */
+#ed button, #ed header .lbl, #ed .sh .lbl { white-space: nowrap; }
+#ed header .lbl { font-size: 8px; letter-spacing: 0.1em; }
+#ed .insp .brief { font-family: var(--body); font-style: normal; font-size: 13px; line-height: 1.4; }
+#ed .hint { font-size: 9px; letter-spacing: 0.12em; }
